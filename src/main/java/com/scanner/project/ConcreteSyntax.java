@@ -229,7 +229,7 @@ public class ConcreteSyntax {
 		
 		e = addition();
 		// TODO TO BE COMPLETED
-		while (token.getValue().equals("<") || token.getValue().equals("<=")
+		if (token.getValue().equals("<") || token.getValue().equals("<=")
 				|| token.getValue().equals(">")
 				|| token.getValue().equals(">=")
 				|| token.getValue().equals("==")
@@ -318,7 +318,7 @@ public class ConcreteSyntax {
 			Value v = null;
 
 			if (isInteger(token.getValue()))
-				v = new Value((Integer.parseInt(token.getValue())));
+				v = new Value((Integer.parseInt(token.getValue()));
 
 			else if (token.getValue().equals("True"))
 				v = new Value(true);
