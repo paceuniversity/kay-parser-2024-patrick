@@ -318,7 +318,7 @@ public class ConcreteSyntax {
 			Value v = null;
 
 			if (isInteger(token.getValue()))
-				v = new Value((Integer.parseInt(token.getValue()));
+				v = new Value((Integer.parseInt(token.getValue())));
 
 			else if (token.getValue().equals("True"))
 				v = new Value(true);
